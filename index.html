@@ -1,0 +1,50 @@
+<style>
+  @keyframes body-pulse {
+    0% {
+      background-color: #855a96;
+    }
+
+    50% {
+      background-color: #f7f56a;
+    }
+
+    100% {
+      background-color: #855a96;
+    }
+  }
+
+  body {
+    margin: 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: body-pulse 2s infinite;
+  }
+
+  @keyframes circle-pulse {
+    0% {
+      background-color: #330d52;
+    }
+
+    50% {
+      background-color: #ede187;
+    }
+
+    100% {
+      background-color: #330d52;
+    }
+  }
+
+  #circle {
+    width: 30vw;
+    height: 70vw;
+    border-radius: 25%;
+    filter: blue(30px);
+    animation: circle-pulse 2s infinite;
+  }
+</style>
+
+<body>
+  <div id="circle"></div>
+</body>
